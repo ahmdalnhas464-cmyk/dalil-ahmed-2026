@@ -3,401 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل أحمد 2026 - الموسوعة الشاملة</title>
-    <meta name="description" content="دليل أحمد 2026: كل مواقع التواصل، التسوق، الأخبار، ترددات النايل سات، بث مباشر للقنوات.">
+    <title>دليل أحمد 2026 - الموسوعة الشاملة | بث مباشر وترددات</title>
+    
+    <!-- Google Analytics - استبدل G-XXXXXXXXXX بالكود بتاعك -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
         
-        * {margin: 0; padding: 0; box-sizing: border-box;}
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        /* خلفية متحركة فريدة */
         body {
-            font-family: 'Cairo', sans-serif; 
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(-45deg, #1e3c72, #2a5298, #7e22ce, #ec4899);
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
-            line-height: 1.8; 
-            color: #1c1e21;
-            overflow-x: hidden;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
         }
         
         @keyframes gradientBG {
-            0% {background-position: 0% 50%;}
-            50% {background-position: 100% 50%;}
-            100% {background-position: 0% 50%;}
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         
-        /* هيدر متوهج */
-        .header {
-            background: rgba(0,0,0,0.3); 
-            backdrop-filter: blur(10px);
-            color: white; 
-            padding: 25px 20px; 
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        header {
             text-align: center;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-            animation: glowHeader 3s ease-in-out infinite alternate;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
         
-        @keyframes glowHeader {
-            from {box-shadow: 0 8px 32px rgba(24, 119, 242, 0.3);}
-            to {box-shadow: 0 8px 32px rgba(231, 60, 126, 0.6);}
-        }
-        
-        .header h1 {
-            font-size: 32px; 
-            margin-bottom: 5px; 
+        h1 {
+            font-size: 3em;
             font-weight: 900;
-            animation: textGlow 2s ease-in-out infinite alternate;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(236, 72, 153, 0.8);
+            animation: neonGlow 2s ease-in-out infinite;
         }
         
-        @keyframes textGlow {
-            from {text-shadow: 0 0 10px #fff, 0 0 20px #fff;}
-            to {text-shadow: 0 0 20px #1877f2, 0 0 30px #1877f2;}
+        @keyframes neonGlow {
+            0%, 100% { text-shadow: 0 0 10px rgba(236, 72, 153, 0.8), 0 0 20px rgba(236, 72, 153, 0.6); }
+            50% { text-shadow: 0 0 20px rgba(236, 72, 153, 1), 0 0 30px rgba(236, 72, 153, 0.8); }
         }
         
-        .top-bar {display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 15px;}
-        .visitor-counter, #google_translate_element {
-            background: rgba(255,255,255,0.2); 
-            color: white; 
-            padding: 10px 18px; 
-            border-radius: 25px; 
-            display: inline-block; 
-            font-weight: bold; 
-            border: 1px solid rgba(255,255,255,0.3);
-            backdrop-filter: blur(5px);
+        .subtitle { font-size: 1.2em; opacity: 0.9; }
+        
+        .visitor-counter {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(236, 72, 153, 0.9);
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(236, 72, 153, 0.5);
             animation: float 3s ease-in-out infinite;
+            z-index: 1000;
         }
         
         @keyframes float {
-            0%, 100% {transform: translateY(0px);}
-            50% {transform: translateY(-8px);}
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
         }
         
-        #google_translate_element select {
-            background: transparent; 
-            border: none; 
-            color: white; 
-            font-weight: bold;
-            font-family: 'Cairo', sans-serif;
-        }
-        
-        .container {max-width: 1200px; margin: 30px auto; padding: 0 15px;}
-        
-        .ad-banner {
-            background: rgba(255,255,255,0.9); 
-            border: 2px dashed #1877f2; 
-            padding: 40px 20px; 
-            text-align: center; 
-            margin: 25px 0; 
-            border-radius: 15px; 
-            color: #6c757d;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% {transform: scale(1);}
-            50% {transform: scale(1.02);}
-        }
-        
-        .section {margin-bottom: 40px;}
-        .section h2 {
-            background: linear-gradient(135deg, #1877f2, #e91e63); 
-            color: white; 
-            padding: 15px 25px; 
-            border-radius: 12px; 
-            margin-bottom: 20px; 
-            font-size: 24px;
-            font-weight: 900;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            animation: slideInRight 0.8s ease-out;
-        }
-        
-        @keyframes slideInRight {
-            from {transform: translateX(100px); opacity: 0;}
-            to {transform: translateX(0); opacity: 1;}
-        }
-        
-        .grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;}
-        
-        /* الكروت بحركة دخول */
-        .card {
-            background: rgba(255,255,255,0.95); 
-            border-radius: 20px; 
-            padding: 25px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
-            border-right: 5px solid #1877f2;
+        .section {
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            transform: translateY(50px);
-            opacity: 0;
-            animation: cardEntry 0.6s ease-out forwards;
-            transition: all 0.4s ease;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.6s ease-out;
         }
         
-        .card:nth-child(1) {animation-delay: 0.1s;}
-        .card:nth-child(2) {animation-delay: 0.2s;}
-        .card:nth-child(3) {animation-delay: 0.3s;}
-        .card:nth-child(4) {animation-delay: 0.4s;}
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
         
-        @keyframes cardEntry {
-            to {transform: translateY(0); opacity: 1;}
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid rgba(236, 72, 153, 0.6);
+            padding-bottom: 10px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
         .card:hover {
-            transform: translateY(-10px) scale(1.03);
-            box-shadow: 0 20px 40px rgba(24, 119, 242, 0.3);
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 10px 30px rgba(236, 72, 153, 0.4);
         }
         
-        .card h3 {
-            color: #1877f2; 
-            margin-bottom: 15px; 
-            font-size: 20px;
-            font-weight: 900;
-        }
-        .card ul {list-style: none;}
-        .card li {margin-bottom: 10px;}
-        .card a {
-            text-decoration: none; 
-            color: #333; 
-            display: block; 
-            padding: 8px 0; 
-            transition: 0.3s;
-            font-weight: 700;
-        }
-        .card a:hover {
-            color: #e91e63; 
-            transform: translateX(-10px);
-            font-weight: 900;
+        .card h3 { font-size: 1.3em; margin-bottom: 10px; color: #fbbf24; }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #ec4899, #7e22ce);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
         }
         
-        /* أزرار البث تنبض */
-        .live-btn {
-            background: linear-gradient(45deg, #e91e63, #ff6b9d) !important; 
-            color: white !important; 
-            padding: 14px 18px !important; 
-            border-radius: 12px; 
-            text-align: center; 
-            margin: 10px 0; 
-            font-weight: 900; 
-            display: block;
-            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
-            animation: btnPulse 1.5s infinite;
-            position: relative;
-            overflow: hidden;
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(236, 72, 153, 0.6);
         }
         
-        .live-btn:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: 0.5s;
+        .btn-live {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            animation: pulse 2s ease-in-out infinite;
         }
         
-        .live-btn:hover:before {left: 100%;}
-        
-        @keyframes btnPulse {
-            0%, 100% {transform: scale(1); box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);}
-            50% {transform: scale(1.05); box-shadow: 0 8px 25px rgba(233, 30, 99, 0.6);}
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            50% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
         }
         
-        .live-btn:hover {
-            transform: scale(1.08) !important;
-            animation: none;
-        }
-        
-        /* زرار الواتساب */
-        .whatsapp-btn {
-            display: block; 
-            background: linear-gradient(45deg, #25d366, #128c7e); 
-            color: white; 
-            text-align: center; 
-            padding: 18px; 
-            border-radius: 15px; 
-            text-decoration: none; 
-            font-size: 20px; 
-            font-weight: 900; 
-            margin: 40px 0;
-            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-            animation: bounce 2s infinite;
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            border-radius: 50px;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            z-index: 1000;
+            animation: bounce 2s ease-in-out infinite;
         }
         
         @keyframes bounce {
-            0%, 100% {transform: translateY(0);}
-            50% {transform: translateY(-10px);}
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
         
-        .whatsapp-btn:hover {
-            animation: none;
-            transform: scale(1.05);
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
         }
         
-        footer {
-            background: rgba(0,0,0,0.8); 
-            color: #b0b3b8; 
-            text-align: center; 
-            padding: 25px; 
-            margin-top: 50px;
+        .lang-switcher select {
+            padding: 10px 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            font-family: 'Cairo', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
         }
         
-        @media (max-width: 600px) {
-            .header h1 {font-size: 26px;}
-            .card {padding: 20px;}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: right;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        th { background: rgba(236, 72, 153, 0.3); font-weight: 700; }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .grid { grid-template-columns: 1fr; }
+            .visitor-counter { top: 10px; right: 10px; font-size: 0.9em; padding: 8px 16px; }
+            .btn-whatsapp { bottom: 20px; left: 20px; padding: 12px 24px; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>🚀 دليل أحمد 2026 - الموسوعة الشاملة</h1>
-        <div class="top-bar">
-            <div class="visitor-counter">👥 الزوار: <span id="visitorCount">1,269</span></div>
-            <div id="google_translate_element"></div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="ad-banner">مساحة إعلانية 970x90 - ضع كود AdSense هنا</div>
-
-        <!-- القسم 1: مواقع الإنترنت والتواصل حول العالم -->
-        <div class="section">
-            <h2>📱 أهم مواقع الإنترنت والتواصل حول العالم</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>مواقع التواصل الاجتماعي</h3>
-                    <ul>
-                        <li><a href="https://facebook.com" target="_blank">Facebook فيسبوك</a></li>
-                        <li><a href="https://instagram.com" target="_blank">Instagram انستجرام</a></li>
-                        <li><a href="https://tiktok.com" target="_blank">TikTok تيك توك</a></li>
-                        <li><a href="https://x.com" target="_blank">X تويتر سابقاً</a></li>
-                        <li><a href="https://youtube.com" target="_blank">YouTube يوتيوب</a></li>
-                        <li><a href="https://snapchat.com" target="_blank">Snapchat سناب شات</a></li>
-                        <li><a href="https://telegram.org" target="_blank">Telegram تليجرام</a></li>
-                        <li><a href="https://whatsapp.com" target="_blank">WhatsApp واتساب</a></li>
-                        <li><a href="https://linkedin.com" target="_blank">LinkedIn لينكد إن</a></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>مواقع الأخبار العالمية</h3>
-                    <ul>
-                        <li><a href="https://bbc.com/arabic" target="_blank">BBC عربي</a></li>
-                        <li><a href="https://cnn.com" target="_blank">CNN</a></li>
-                        <li><a href="https://aljazeera.net" target="_blank">الجزيرة</a></li>
-                        <li><a href="https://alarabiya.net" target="_blank">العربية</a></li>
-                        <li><a href="https://skynewsarabia.com" target="_blank">سكاي نيوز عربية</a></li>
-                        <li><a href="https://youm7.com" target="_blank">اليوم السابع</a></li>
-                        <li><a href="https://reuters.com" target="_blank">Reuters رويترز</a></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>مواقع التسوق الإلكتروني</h3>
-                    <ul>
-                        <li><a href="https://amazon.eg" target="_blank">Amazon أمازون مصر</a></li>
-                        <li><a href="https://amazon.sa" target="_blank">Amazon السعودية</a></li>
-                        <li><a href="https://aliexpress.com" target="_blank">AliExpress علي إكسبرس</a></li>
-                        <li><a href="https://noon.com/egypt-ar" target="_blank">Noon نون</a></li>
-                        <li><a href="https://jumia.com.eg" target="_blank">Jumia جوميا</a></li>
-                        <li><a href="https://shein.com" target="_blank">SHEIN شي إن</a></li>
-                        <li><a href="https://ebay.com" target="_blank">eBay إي باي</a></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>مواقع مهمة أخرى</h3>
-                    <ul>
-                        <li><a href="https://google.com" target="_blank">Google جوجل</a></li>
-                        <li><a href="https://wikipedia.org" target="_blank">Wikipedia ويكيبيديا</a></li>
-                        <li><a href="https://translate.google.com" target="_blank">ترجمة جوجل</a></li>
-                        <li><a href="https://maps.google.com" target="_blank">خرائط جوجل</a></li>
-                        <li><a href="https://booking.com" target="_blank">Booking حجز فنادق</a></li>
-                        <li><a href="https://paypal.com" target="_blank">PayPal باي بال</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="ad-banner">مساحة إعلانية 300x250 - ضع كود AdSense هنا</div>
-
-        <!-- القسم 2: القنوات والبث المباشر -->
-        <div class="section">
-            <h2>🛰️ بث مباشر + ترددات القنوات 2026</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>القنوات الرياضية - بث مباشر</h3>
-                    <ul>
-                        <li><strong>beIN SPORTS 1 HD</strong></li>
-                        <a href="https://www.yalla-shoot.io/live/1" target="_blank" class="live-btn">▶️ السيرفر 1 - يلا شوت</a>
-                        <a href="https://livekoora.online/channels/bein-sports-1" target="_blank" class="live-btn">▶️ السيرفر 2 - كورة لايف</a>
-                        
-                        <li style="margin-top: 15px;"><strong>SSC SPORT 1 HD</strong></li>
-                        <a href="https://livekoora.online/channels/ssc-1" target="_blank" class="live-btn">▶️ السيرفر 1 - كورة لايف</a>
-                        <a href="https://www.yalla-shoot.io/live/ssc-1" target="_blank" class="live-btn">▶️ السيرفر 2 - يلا شوت</a>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <h3>القنوات الإخبارية - بث مباشر رسمي</h3>
-                    <ul>
-                        <li>الجزيرة مباشر</li>
-                        <a href="https://www.youtube.com/c/aljazeerachannel/live" target="_blank" class="live-btn">▶️ الجزيرة يوتيوب رسمي</a>
-                        
-                        <li>العربية الحدث</li>
-                        <a href="https://www.youtube.com/c/AlArabiya/live" target="_blank" class="live-btn">▶️ العربية يوتيوب رسمي</a>
-                        
-                        <li>BBC عربي</li>
-                        <a href="https://www.youtube.com/c/BBCArabic/live" target="_blank" class="live-btn">▶️ BBC يوتيوب رسمي</a>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <h3>نايل سات 7° غرب - الترددات</h3>
-                    <ul>
-                        <li>beIN SPORTS: 11013 أفقي 27500</li>
-                        <li>SSC: 12523 عمودي 27500</li>
-                        <li>MBC مصر: 11470 عمودي 27500</li>
-                        <li>روتانا سينما: 11296 أفقي 27500</li>
-                        <li>القاهرة والناس: 12015 عمودي 27500</li>
-                        <a href="https://www.kora-star.tv" target="_blank" class="live-btn">▶️ كل قنوات النايل سات</a>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <h3>عرب سات 26° شرق - الترددات</h3>
-                    <ul>
-                        <li>السعودية الرياضية: 12149 أفقي 27500</li>
-                        <li>SSC: 12418 أفقي 27500</li>
-                        <li>روتانا خليجية: 11230 أفقي 27500</li>
-                        <li>MBC 1: 11919 أفقي 27500</li>
-                        <a href="https://www.foot24.online" target="_blank" class="live-btn">▶️ كل قنوات العرب سات</a>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <a href="https://wa.me/201110339618" class="whatsapp-btn">
-            للاستفسار والإضافة: واتساب 01110339618
-        </a>
-    </div>
-
-    <footer>
-        <p>© 2026 دليل أحمد - جميع الحقوق محفوظة | تم التحديث بتاريخ يونيو 2026</p>
-    </footer>
-
-    <!-- كود عداد الزوار -->
-    <script>
-        let count = localStorage.getItem('visitorCount') || 1269;
-        count = parseInt(count) + Math.floor(Math.random() * 3) + 1;
-        localStorage.setItem('visitorCount', count);
-        document.getElementById('visitorCount').innerText = count.toLocaleString('ar-EG');
-    </script>
+    <div class="visitor-counter">👥 الزوار: <span id="visitorCount">1,247</span></div>
     
-    <!-- كود ترجمة جوجل -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'ar', includedLanguages: 'en,fr,tr,ur,hi,de,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    <div class="lang-switcher">
+        <select id="langSelect" onchange="changeLanguage()">
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="tr">Türkçe</option>
+        </select>
+    </div>
+    
+    <a href="https://wa.me/201110339618" class="btn btn-whatsapp" target="_blank">💬 للاستفسار واتساب</a>
+    
+    <div class="container">
+        <header>
+            <h1>دليل أحمد 2026</h1>
+            <p class="subtitle">الموسوعة الشاملة - كل المواقع والقنوات والبث المباشر</p>
+        </header>
+        
+        <div class="section">
+            <h2>🌐 مواقع التواصل حول العالم</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>فيسبوك</h3>
+                    <p>أكبر شبكة تواصل اجتماعي</p>
+                    <a href="https://facebook.com" class="btn" target="_blank">فتح فيسبوك</a>
+                </div>
+                <div class="card">
+                    <h3>انستجرام</h3>
+                    <p>مشاركة الصور والفيديوهات</p>
+                    <a href="https://instagram.com" class="btn" target="_blank">فتح انستجرام</a>
+                </div>
+                <div class="card">
+                    <h3>تيك توك</h3>
+                    <p>فيديوهات قصيرة ممتعة</p>
+                    <a href="https://tiktok.com" class="btn" target="_blank">فتح تيك توك</a>
+                </div>
+                <div class="card">
+                    <h3>يوتيوب</h3>
+                    <p>أكبر منصة فيديو</p>
+                    <a href="https://youtube.com" class="btn" target="_blank">فتح يوتيوب</a>
+                </div>
+                <div class="card">
+                    <h3>X تويتر</h3>
+                    <p>الأخبار العاجلة والترندات</p>
+                    <a href="https://x.com" class="btn" target="_blank">فتح X</a>
+                </div>
+                <div class="card">
+                    <h3>واتساب ويب</h3>
+                    <p>مراسلة فورية</p>
+                    <a href="https://web.whatsapp.com" class="btn" target="_blank">فتح واتساب</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📺 البث المباشر</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>beIN SPORTS</h3>
+                    <p>أهم المباريات مباشرة</p>
+                    <a href="https://www.youtube.com/@beINSPORTS/streams" class="btn btn-live" target="_blank">▶️ بث مباشر</a>
+                </div>
+                <div class="card">
+                    <h3>SSC الرياضية</h3>
+                    <p>الدوري السعودي</p>
+                    <a href="https://www.youtube.com/@ssc_sports/streams" class="btn btn-live" target="_blank">▶️ بث مباشر</a>
+                </div>
+                <div class="card">
+                    <h3>الجزيرة</h3>
+                    <p>الأخبار 24/7</p>
+                    <a href="https://www.youtube.com/@aljazeera/streams" class="btn btn-live" target="_blank">▶️ الجزيرة مباشر</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📡 ترددات النايل سات والعرب سات 2026</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>القناة</th>
+                        <th>التردد</th>
+                        <th>الاستقطاب</th>
+                        <th>معدل الترميز</th>
+                        <th>القمر</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>beIN SPORTS HD 1</td>
+                        <td>11013</td>
+                        <td>أفقي H</td>
+                        <td>27500</td>
+                        <td>نايل سات</td>
+                    </tr>
+                    <tr>
+                        <td>SSC 1 HD</td>
+                        <td>12418</td>
+                        <td>أفقي H</td>
+                        <td>27500</td>
+                        <td>عرب سات</td>
+                    </tr>
+                    <tr>
+                        <td>الجزيرة HD</td>
+                        <td>10971</td>
+                        <td>عمودي V</td>
+                        <td>27500</td>
+                        <td>نايل سات</td>
+                    </tr>
+                    <tr>
+                        <td>MBC 1 HD</td>
+                        <td>11470</td>
+                        <td>عمودي V</td>
+                        <td>27500</td>
+                        <td>نايل سات</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>🔗 مواقع مفيدة</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>جوجل</h3>
+                    <p>محرك البحث الأشهر</p>
+                    <a href="https://google.com" class="btn" target="_blank">فتح جوجل</a>
+                </div>
+                <div class="card">
+                    <h3>أمازون</h3>
+                    <p>التسوق أونلاين</p>
+                    <a href="https://amazon.com" class="btn" target="_blank">فتح أمازون</a>
+                </div>
+                <div class="card">
+                    <h3>ويكيبيديا</h3>
+                    <p>الموسوعة الحرة</p>
+                    <a href="https://ar.wikipedia.org" class="btn" target="_blank">فتح ويكيبيديا</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let count = localStorage.getItem('visitorCount') || 1247;
+        count = parseInt(count) + Math.floor(Math.random() * 5) + 1;
+        localStorage.setItem('visitorCount', count);
+        document.getElementById('visitorCount').textContent = count.toLocaleString('ar-EG');
+        
+        function changeLanguage() {
+            const lang = document.getElementById('langSelect').value;
+            alert('سيتم إضافة الترجمة الكاملة قريباً! Language: ' + lang);
         }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
